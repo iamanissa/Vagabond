@@ -18,6 +18,13 @@ ActiveRecord::Schema.define(version: 2020_04_23_025848) do
   create_table "places", force: :cascade do |t|
     t.string "title"
     t.text "address"
+    t.string "address_first"
+    t.string "address_second"
+    t.string "street"
+    t.string "city"
+    t.string "state"
+    t.integer "zip"
+    t.string "country"
     t.float "latitude"
     t.float "longitude"
     t.string "visited_by"
