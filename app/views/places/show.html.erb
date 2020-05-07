@@ -2,3 +2,7 @@
 
 <p>Address: <%= @place.address %></p>
 <p>Coordinates: <%= @place.latitude %> <%= @place.longitude %></p>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16
+    &markers=#{@place.latitude}%2C#{@place.longitude}
+    &key=#{Rails.application.credentials.google_api_key}"%>
+
