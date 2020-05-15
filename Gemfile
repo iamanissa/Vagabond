@@ -21,11 +21,15 @@ gem 'bootsnap', '>= 1.4.2', require: false   # Reduces boot times through cachin
 # gem 'image_processing', '~> 1.2'  # Use Active Storage variant
 
 group :development, :test do
-  gem 'pry-byebug', '3.9.0'  # Adds step-by-step debugging and stack navigation capabilities to pry using byebug
-  gem 'rspec-rails', '4.0.0' # RSpec testing framework to Ruby on Rails
+  gem 'factory_bot_rails', '5.2.0'
+  gem 'faker', '2.11.0'            # A library for generating fake data such as names, addresses, and phone numbers
+  gem 'pry-byebug', '3.9.0'        # Adds step-by-step debugging and stack navigation capabilities to pry using byebug
+  gem 'rspec-rails', '4.0.0'       # RSpec testing framework to Ruby on Rails
+  gem 'shoulda-matchers'
 end
 
 group :development do
+  gem 'annotate', '3.1.1'
   gem 'web-console', '>= 3.3.0' # Interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'listen', '3.2.1'         # Listens to file modifications and notifies you about the changes.
   gem 'spring'                  # Spring speeds up development by keeping your application running in the background.

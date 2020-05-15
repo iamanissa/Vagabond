@@ -18,7 +18,8 @@
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null
 #
-class Place < ApplicationRecord
-  geocoded_by :address
-  after_validation :geocode, if: ->(obj){ obj.address.present? and obj.address_changed? }
+require 'rails_helper'
+
+RSpec.describe Place, type: :model do
+  # https://stackoverflow.com/questions/32489725/rails-geocoder-testing-with-rspec
 end
